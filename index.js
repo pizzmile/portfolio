@@ -20,14 +20,40 @@ $(".nav-link").click(function () {
 });
 
 // Scroll event
-$(window).scroll(function (event) {
-    if ($(window).scrollTop() < $("#about").position()["top"]) {
+$(window).on("load scroll", function (event) {
+    // Give/remove navbar glass class
+    if ($(window).scrollTop() > 0) {
+        if (!$(".navbar").hasClass("glass")) {
+            $(".navbar").addClass("glass");
+        }
+    } else {
+        if ($(".navbar").hasClass("glass")) {
+            $(".navbar").removeClass("glass");
+        }
+    }
+
+    // Update current link in navbar
+    if ($(window).scrollTop() < $("#about").position()["top"] * (1/2)) {
         updateCurrent("#home");
-    } else if ($(window).scrollTop() < $("#projects").position()["top"]) {
+    } else if ($(window).scrollTop() < $("#projects").position()["top"] * (3/4)) {
         updateCurrent("#about");
-    } else if ($(window).scrollTop() < $("#contact").position()["top"]) {
+    } else if ($(window).scrollTop() < $("#contact").position()["top"]* (5/6)) {
         updateCurrent("#projects");
     } else {
         updateCurrent("#contact");
     }
 });
+
+// Load event
+// $(window).load(function (event) {
+//     // Update current link in navbar
+//     if ($(window).scrollTop() < $("#about").position()["top"] * (1/2)) {
+//         updateCurrent("#home");
+//     } else if ($(window).scrollTop() < $("#projects").position()["top"] * (2/3)) {
+//         updateCurrent("#about");
+//     } else if ($(window).scrollTop() < $("#contact").position()["top"]* (3/4)) {
+//         updateCurrent("#projects");
+//     } else {
+//         updateCurrent("#contact");
+//     }
+// });
