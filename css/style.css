@@ -1,6 +1,6 @@
 :root {
     font-family: "Montserrat", sans-serif;
-    font-size: 25px;
+    font-size: 20px;
     --black: #010400ff;
     --persian-blue: #1a3cd6ff;
     --blue-jeans: #00a6fbff;
@@ -83,7 +83,7 @@ a.nav-link {
     text-decoration: none;
     font-family: 'Montserrat', sans-serif;
     font-weight: 300;
-    font-size: 0.75rem;
+    font-size: 1rem;
     color: var(--ivory);
 }
 
@@ -198,7 +198,7 @@ a.nav-link.current {
 #about .layout {
     height: 100%;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
@@ -217,17 +217,19 @@ a.nav-link.current {
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
-    padding-top: 100px;
+    /*padding-top: 100px;*/
 }
 
 #studies .content .el {
+    min-width: 425px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding-top: 325px;
 }
 
-#studies .el .background {
+#studies .el>.bg {
     height: 300px;
 }
 
@@ -243,6 +245,11 @@ a.nav-link.current {
 #studies .bscs p {
     position: relative;
     bottom: 450px;
+    font-size: 1.25rem;
+}
+
+#studies .el {
+    height: 225px;
 }
 
 #studies .mscs-1 .logo {
@@ -253,6 +260,7 @@ a.nav-link.current {
 #studies .mscs-1 p {
     position: relative;
     bottom: 400px;
+    font-size: 1.25rem;
 }
 
 #studies .mscs-2 .logo {
@@ -263,10 +271,21 @@ a.nav-link.current {
 #studies .mscs-2 p {
     position: relative;
     bottom: 450px;
+    font-size: 1.25rem;
 }
 
 #studies .el .grade {
     color: var(--turquoise-blue);
+    height: 25px;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    margin: 0;
+}
+
+#studies .el .grade img {
+    margin: 0 0.5rem;
 }
 
 #about h1 {
