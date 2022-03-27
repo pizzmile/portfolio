@@ -382,16 +382,18 @@ a.nav-link.current {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-top: 50px;
+    padding-top: 100px;
 }
 
 #projects h1 {
     color: var(--ivory);
     font-weight: 700;
     font-size: 2rem;
+    margin: 0;
 }
 
 #projects .subsection {
+    margin-top: 50px;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -443,7 +445,7 @@ a.nav-link.current {
 }
 
 #projects .slide .logo {
-    width: 100px;
+    width: 150px;
     margin-bottom: 10px;
 }
 
