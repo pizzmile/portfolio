@@ -163,7 +163,7 @@ a.nav-link.current {
 }
 
 #home .graphic img {
-    width: 500px;
+    width: 400px;
 }
 
 #home h1 {
@@ -190,8 +190,7 @@ a.nav-link.current {
 
 /* About section */
 #about {
-    height: 100vh;
-    /*background-color: var(--persian-blue)*/
+    min-height: 100vh;
     color: white;
 }
 
@@ -206,7 +205,7 @@ a.nav-link.current {
 #studies {
     width: 100%;
     height: 200px;
-    padding-top: 350px;
+    padding-top: 600px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -224,6 +223,14 @@ a.nav-link.current {
     width: 800px;
     opacity: 0.25;
     z-index: -1;
+}
+
+#studies .content-wrapper .eit-logo {
+    width: 200px;
+    position: relative;
+    z-index: -1;
+    bottom: 650px;
+    right: 450px;
 }
 
 #studies .content {
@@ -304,6 +311,59 @@ a.nav-link.current {
     margin: 0 0.5rem;
 }
 
+#skills {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    color: var(--ivory);
+}
+
+#skills .title {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+}
+
+#skills h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--ivory);
+}
+
+#skills h4 {
+    color: var(--turquoise-blue);
+    font-size: 1.1rem;
+    letter-spacing: 0.09rem;
+}
+
+#skills .content {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#skills .col {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: start;
+}
+
+#skills .row {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: start;
+}
+
 #about h1 {
     color: var(--ivory);
     font-weight: 700;
@@ -312,8 +372,79 @@ a.nav-link.current {
 
 /* Projects section */
 #projects {
-    height: 100vh;
-    /*background-color: var(--persian-blue)*/
+    min-height: 100vh;
+    color: var(--ivory);
+}
+
+#projects .layout {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+}
+
+#projects h1 {
+    color: var(--ivory);
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+#projects .subsection {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#projects .subsection h1 {
+    font-size: 1.25rem;
+    font-weight: 400;
+    color: var(--turquoise-blue);
+    margin: 0;
+}
+
+#projects .subsection h2 {
+    margin-bottom: 50px;
+}
+
+#projects .subsection p {
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+#projects .subsection .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#projects .subsection .row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: start;
+}
+
+#projects .subsection .slide {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    text-align: center;
+}
+
+#projects .subsection .slide.lg {
+    width: 30%;
+}
+
+#projects .slide .logo {
+    width: 100px;
+    margin-bottom: 10px;
 }
 
 /* Contact section */

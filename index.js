@@ -44,16 +44,4 @@ $(window).on("load scroll", function (event) {
     }
 });
 
-// Load event
-// $(window).load(function (event) {
-//     // Update current link in navbar
-//     if ($(window).scrollTop() < $("#about").position()["top"] * (1/2)) {
-//         updateCurrent("#home");
-//     } else if ($(window).scrollTop() < $("#projects").position()["top"] * (2/3)) {
-//         updateCurrent("#about");
-//     } else if ($(window).scrollTop() < $("#contact").position()["top"]* (3/4)) {
-//         updateCurrent("#projects");
-//     } else {
-//         updateCurrent("#contact");
-//     }
-// });
+// Slideshow
